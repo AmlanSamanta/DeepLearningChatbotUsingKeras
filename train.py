@@ -49,7 +49,7 @@ model.add(Dense(num_classes, activation='softmax'))
 
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-# checking model architecture
+# displaying model architecture
 model.summary()
 
 epochs = 550
