@@ -49,7 +49,7 @@ model.add(Dense(num_classes, activation='softmax'))
 
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-#model.summary()
+model.summary()
 
 epochs = 550
 history = model.fit(padded_sequences, np.array(training_labels), epochs=epochs)
